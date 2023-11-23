@@ -8,7 +8,7 @@ module.exports = (err, req, res, next) => {
         messsage: err.message,
       });
     } else {
-      console.error('Error----------', err);
+      // console.error('Error----------', err);
       res.status(500).json({
         status: 'Error',
         message: 'Something went wrong!',
